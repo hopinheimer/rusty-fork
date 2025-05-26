@@ -63,13 +63,13 @@ impl ExitStatusWrapper {
     /// For simplicity and to match `wait_timeout`, this method is always
     /// present even on systems that do not support it.
     // #[cfg(not(target_os = "windows"))]
-    pub fn unix_signal(&self) -> Option<i32> {
-        use std::os::unix::process::ExitStatusExt;
+    // pub fn unix_signal(&self) -> Option<i32> {
+    //     use std::os::unix::process::ExitStatusExt;
 
-        match self.0 {
-            ExitStatusEnum::Std(es) => es.signal(),
-        }
-    }
+    //     match self.0 {
+    //         ExitStatusEnum::Std(es) => es.signal(),
+    //     }
+    // }
 
     /// Returns the Unix signal which terminated this process.
     ///
