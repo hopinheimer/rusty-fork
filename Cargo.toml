@@ -23,10 +23,10 @@ travis-ci = { repository = "AltSysrq/rusty-fork" }
 fnv = "1.0"
 quick-error = "1.2"
 tempfile = "3.0"
-wait-timeout = { version = "0.2", optional = true }
+# wait-timeout = { version = "0.2", optional = true }
 
 [dev-dependencies]
 
 [features]
 default = [ "timeout" ]
-timeout = [ "wait-timeout" ]
+timeout = []
