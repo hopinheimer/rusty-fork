@@ -116,7 +116,7 @@
 #[macro_use] extern crate quick_error;
 
 #[macro_use] mod sugar;
-#[macro_use] pub mod fork_test;
+// #[macro_use] pub mod fork_test;
 mod error;
 mod cmdline;
 mod fork;
